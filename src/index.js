@@ -1,8 +1,5 @@
 const { Client, GatewayIntentBits } = require('discord.js');
 
-/* Misc */
-console.clear();
-
 /* Initialize client */
 const client = new Client({
     intents: [
@@ -10,8 +7,8 @@ const client = new Client({
     ],
 });
 
-const boilerplateComponents = async () => {
-  await require('./util/boilerplateClient')(client);
+const activitieComponents = async () => {
+  await require('./util/activityClient.js')(client);
 }
 
-boilerplateComponents();
+activitieComponents();
